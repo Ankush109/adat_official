@@ -10,6 +10,6 @@ router.route("/password/reset/:token").put(resetpassword)
 router.route("/password/update").put(isauthenticateduser,updatepassword)
 router.route("/me").get(isauthenticateduser,getuserdetails)
 router.route("/me/update").put(isauthenticateduser,updateprofile)
-router.route("/admin/users").get(isauthenticateduser,authorizeroles("admin"),getalluser)
-router.route("/admin/users/:id").get(isauthenticateduser,authorizeroles("admin"),getsingleuser).put(isauthenticateduser,authorizeroles("admin"),updateUserRole).delete(isauthenticateduser,authorizeroles("admin"),deleteuser)
+router.route("/admin/users").get(isauthenticateduser,getalluser)
+router.route("/admin/users/:id").get(isauthenticateduser,getsingleuser).put(isauthenticateduser,authorizeroles("admin"),updateUserRole).delete(isauthenticateduser,authorizeroles("admin"),deleteuser)
 module.exports =router

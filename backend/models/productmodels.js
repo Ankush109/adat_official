@@ -18,6 +18,7 @@ const prodcutschema = new mongoose.Schema({
         type:Number,
         default:0
     },
+
     images:[{
         public_id:{
             type:String,
@@ -35,7 +36,8 @@ type:String
     },
     stock:{
         type:Number,
-       
+        required:true,
+        default:0,
         maxlength:[4,"stock cant exceed 4 characters"]
     },
     numberofreviews:{

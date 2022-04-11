@@ -7,12 +7,16 @@ import {useAlert} from "react-alert"
 import { Typography } from '@mui/material'
 import { Link } from 'react-router-dom'
 import {Doughnut,Line} from "react-chartjs-2"
+import {getallorders} from "../../actions/orderaction"
 import { getallproductsadmin } from '../../actions/productaction.js';
+import {getallusers,clearerrors,deleteuser } from "../../actions/useraction";
 const Dashboard = () => {
 
   const alert = useAlert();
   const dispatch =useDispatch()
   const { error, products } = useSelector((state) => state.product);
+  const {  user } = useSelector((state) => state.allusers);
+  const { orders} = useSelector((state) => state.allorders);
   let outofstock =0
   products && products.forEach((item)=>{
     if(item.stock===0){
@@ -25,7 +29,10 @@ const Dashboard = () => {
       console.log(error);
     }
       dispatch(getallproductsadmin())
+      dispatch(getallorders())
+      dispatch(getallusers())
     },[dispatch,error,alert]
+    
   )
   const linestate  ={
     labels:["Initial Amount","Amount Earned"],
@@ -70,11 +77,11 @@ const Dashboard = () => {
           </Link>
           <Link to="/admin/orders">
             <p>Orders</p>
-            <p>4</p>
+            <p>{orders && orders.length}</p>
           </Link>
           <Link to="/admin/users">
             <p>Users</p>
-            <p>4</p>
+            <p>{user && user.length}</p>
           </Link>
         </div>
       </div>

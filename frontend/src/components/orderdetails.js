@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 
 import { Link, useParams } from "react-router-dom";
 import { Typography } from "@material-ui/core";
-import { getorderdetails,clearerrors } from "../actions/orderaction";
+import {myorder,getorderdetails} from "../actions/orderaction"
 
 import { useAlert } from "react-alert";
 
@@ -16,10 +16,13 @@ const OrderDetails = () => {
   const alert = useAlert();
 const {id} =useParams()
   useEffect(() => {
-  
+  if(error){
+    console.log(error);
+    alert.error(error)
+  }
 
-    dispatch(getorderdetails(id))
 
+dispatch(getorderdetails(id))
   }, [alert,dispatch, error,id]);
   return (
  

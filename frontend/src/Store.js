@@ -4,7 +4,7 @@ import {composeWithDevTools} from "redux-devtools-extension"
 import thunk from "redux-thunk"
 import { cartreducer } from "./reducers/cartreducer"
 import { allorderreducer, myorderreducer, neworderreducer, orderdetailreducer, orderreducer } from "./reducers/orderreducer"
-import { deletereducer, newproductreducer, newreviewreducer, productdetailreducer, productreducer } from "./reducers/productreducer"
+import { deletereducer, newproductreducer, newreviewreducer, reviewsreducer,deletereviews,productdetailreducer, productreducer } from "./reducers/productreducer"
 import {allUsersReducer, profilereducer, userDetailsReducer, userreducer} from "./reducers/Userreducer"
 const reducer =combineReducers({
 product:productreducer,
@@ -21,7 +21,9 @@ allorders:allorderreducer,
 order:orderreducer,
 orderdetails:orderdetailreducer,
 allusers:allUsersReducer,
-userdetails:userDetailsReducer
+userdetails:userDetailsReducer,
+reviewop:reviewsreducer,
+deletereview:deletereviews,
 
 })
 let initialstate ={
