@@ -13,8 +13,8 @@ import "./sidebar.css"
 const Sidebar = () => {
   return (
     <div className="sidebar">
-    <Link to="#">
-      <img src="" alt="Ecommerce" />
+    <Link to="/admin/dashboard">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/ADAT_logo.svg" width="100" height="100" alt="Ecommerce" />
     </Link>
     <Link to="/admin/dashboard">
       <p>
@@ -22,7 +22,7 @@ const Sidebar = () => {
       </p>
     </Link>
 
-      <TreeView
+      {/* <TreeView
         defaultCollapseIcon={<Expand/>}
         defaultExpandIcon={<ImportExport />}
       >
@@ -35,7 +35,24 @@ const Sidebar = () => {
             <TreeItem nodeId="3" label="Create" icon={<Add />} />
           </Link>
         </TreeItem>
-      </TreeView>
+      </TreeView> */}
+       <Link to="/admin/products">
+      <p>
+        <ListAlt/>
+        Products
+      </p>
+    </Link>
+    <Link to="/admin/product">
+      <p>
+        <Add /> Add Product 
+      </p>
+    </Link>
+    <Link to="/admin/reviews">
+      <p>
+        <RateReview />
+        Reviews
+      </p>
+    </Link>
 
     <Link to="/admin/orders">
       <p>
@@ -48,12 +65,7 @@ const Sidebar = () => {
         <People /> Users
       </p>
     </Link>
-    <Link to="/admin/reviews">
-      <p>
-        <RateReview />
-        Reviews
-      </p>
-    </Link>
+   
   </div>
   )
 }

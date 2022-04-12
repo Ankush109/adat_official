@@ -124,6 +124,9 @@ const navigate =useNavigate()
         <Sidebar />
         <div className="productListContainer">
           <h1 id="productListHeading">ALL USERS</h1>
+          <h3>
+            Note : Dont delete your own account which is logged in right now :)
+          </h3>
 
           <DataGrid
             rows={rows}

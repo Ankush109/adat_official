@@ -142,7 +142,7 @@ const navigate =useNavigate()
             onSubmit={productReviewsSubmitHandler}
           >
             <h1 className="productReviewsFormHeading">ALL REVIEWS</h1>
-
+            
             <div>
               <Star />
               <input
@@ -153,7 +153,9 @@ const navigate =useNavigate()
                 onChange={(e) => setProductId(e.target.value)}
               />
             </div>
-
+            <h3 >Sometimes reviews may load slow ! </h3>
+            <br>
+            </br>
             <Button
               id="createProductBtn"
               type="submit"

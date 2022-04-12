@@ -73,7 +73,7 @@ shipingprice:{
 
 },
 totalprice:{
-type:String,
+type:Number,
 default:0
 },
 orderstatus:{

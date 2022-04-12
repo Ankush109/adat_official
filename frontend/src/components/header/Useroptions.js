@@ -11,6 +11,7 @@ import { useDispatch ,useSelector} from 'react-redux';
 import { logout } from '../../actions/useraction';
 import { Backdrop } from '@mui/material';
 import { ShoppingCart } from '@mui/icons-material';
+import HomeIcon from '@mui/icons-material/Home';
 const Useroptions = ({ user }) => {
 
 
@@ -24,7 +25,9 @@ const {cartitems} = useSelector((state)=>state.cart)
     { icon: <ListAltIcon />, name: "orders", func: orders },
     { icon: <PersonIcon />, name: "profile", func: account },
     { icon: < ShoppingCart style={{color:cartitems.length>0?"tomato":"unset"}} />, name: `Cart(${cartitems.length})`, func: cart },
-    { icon: <ExitToAppIcon />, name: "logout", func: logoutuser }
+    { icon: <ExitToAppIcon />, name: "logout", func: logoutuser },
+     { icon: <HomeIcon />, name: "home", func:home }
+    
     
 
   ]
@@ -45,6 +48,9 @@ const {cartitems} = useSelector((state)=>state.cart)
   }
   function cart(){
     navigate("/cart")
+  }
+  function home(){
+    navigate("/");
   }
   function logoutuser(){
    dispatch(logout())

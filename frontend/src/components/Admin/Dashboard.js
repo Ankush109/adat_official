@@ -34,43 +34,31 @@ const Dashboard = () => {
     },[dispatch,error,alert]
     
   )
-  const linestate  ={
-    labels:["Initial Amount","Amount Earned"],
-    datasets:[
-      {
-        label:"TOTAL AMOUNT",
-        backgroundColor:["tomato"],
-        hoverBackgroundColor:["rgb(197,72,40)"],
-        data:[0,4000]
-      }
-    ]
-  }
-  const Doughnutstate  ={
-    labels:["out of stock","instock"],
-    datasets:[
-      {
-       
-        backgroundColor:["red","blue"],
-        hoverBackgroundColor:["yellow"],
-        data:[2,10]
-      }
-    ]
-  }
+  let totalamount = 0;
+  orders && orders.forEach((item) => {
+      totalamount = totalamount + item.totalprice;
+      
+    });
+  
   return (
     <div className="dashboard">
 
     <Sidebar />
 
     <div className="dashboardContainer">
+     
+      <Typography component="h1">Welcome on Board Sir </Typography>
       <Typography component="h1">Dashboard</Typography>
 
       <div className="dashboardSummary">
         <div>
           <p>
-             Total Amount <br /> ₹300
+             Total Buisness Revenue <br /> ₹ {totalamount}
           </p>
         </div>
+        
         <div className="dashboardSummaryBox2">
+          
           <Link to="/admin/products">
             <p>Product</p>
             <p>{products && products.length} </p>
@@ -84,6 +72,10 @@ const Dashboard = () => {
             <p>{user && user.length}</p>
           </Link>
         </div>
+        <div>
+        <h3>Note :  Click on those circles to go to the individual sections</h3>
+        </div>
+        
       </div>
   
 

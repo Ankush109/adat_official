@@ -58,7 +58,8 @@ store.dispatch(loaduser())
 getstripeapikey()
   }, []);
   return (
-    <Router>
+    <div className="op"> 
+      <Router>
 <Header/>
 {isAuthenticated && <Useroptions user={user} />}
 <Routes>
@@ -101,6 +102,7 @@ getstripeapikey()
  <Footer/>
     
     </Router>
+      </div>
  
   );
 }

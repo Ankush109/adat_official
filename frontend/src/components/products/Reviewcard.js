@@ -13,7 +13,7 @@ const Reviewcard = ({review}) => {
     return (
     <div className='reviewCard'>
         <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlYNJurwK2IVxe2vKUCbvFaAsRUkHnDgI8mg&usqp=CAU"alt="user"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAvY5L-SW4Q9hR6jVWSBTsCBAuMGO8rXtq9Q&usqp=CAU"alt="user"
         />
         <p>{review.name}</p>
         <ReactStars {...options}/>

@@ -1,25 +1,38 @@
 .banner{
-    background-image: url(https://wallpaperaccess.com/full/1503057.jpg);
+    background-image: url(https://media.wired.com/photos/5c9040ee4950d24718d6da99/16:9/w_2400,h_1350,c_limit/shoppingcart-1066110386.jpg);
     height:100vmin;
    display: flex;
    flex-direction: column;
-    text-align: center;
-    align-items: center;
+    align-items:baseline ;
     justify-content: center;
-    color: white;
+  color: rgb(173, 11, 11);
+
+}
+input {
+    background-color: transparent;
+    border: 0px none;
+    height: 20px;
+    width: 160px;
+    color: black;
+    padding-left: 35px;
 }
 .banner >h1{
-    margin: 5vmax;
-    font:600 2.5vmax "Roboto"
+padding-left: 350px;
+width: 10vw;
+font-size: 100px;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .banner > p{
-    font:300 1.4vmax "Lucide Sans"
+    font:300 1.4vmax "Lucide Sans";
+    padding-left: 350px;
+    font-size: 30px;
 }
 .banner > a > button{
-    margin-bottom: 5vmax;
+    margin-top: 30px;
+    margin-left: 20vmax;
     cursor:pointer;
-    background-color: white;
-    border: 1px solid white;
+    background-color: rgb(179, 35, 35);
+    border: 1px solid rgb(255, 220, 145);
     border-radius: 0;
     padding:1vmax;
     transition: all 0.5;
@@ -27,7 +40,7 @@
     font:500 1vmax "Roboto"
 }
 .banner > a > button:hover{
-    background-color: rgba(255,255,255,0);
+    background-color:rgb(194, 69, 69);
     color:white
 }
 
@@ -35,7 +48,7 @@
     text-align: center;
     font-family: Roboto;
     font-size: 1.4vmax;
-    border-bottom: 1px solid rgba(21,21,21,0.5);
+    border-bottom: 1px solid rgba(220, 97, 97, 0.5);
     width: 20vmax;
     padding:1vmax;
     margin:5vmax auto
