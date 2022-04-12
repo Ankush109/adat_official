@@ -63,7 +63,7 @@ const {cartitems} = useSelector((state)=>state.cart)
           direction="down"
           className='speedDial'
       
-          icon={<img className='speedDialIcon' src={user.avatar.url ? user.avatar.url : "./images/ankush.png"} alt="profile" />}
+          icon={<img className='speedDialIcon' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAvY5L-SW4Q9hR6jVWSBTsCBAuMGO8rXtq9Q&usqp=CAU" alt="profile" />}
         >
        {options.map((item)=>(
             <SpeedDialAction icon={item.icon} tooltipTitle={item.name} onClick={item.func} tooltipOpen={window.innerWidth<=600?true:false} />

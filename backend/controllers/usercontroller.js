@@ -6,22 +6,13 @@ const sendEmail =require("../utils/sendemail")
 const cloudinary = require("cloudinary")
 const crypto =require("crypto")
 exports.registername =catchasyncerrors(async(req,res,next)=>{
-    const mycloud = await cloudinary.v2.uploader.upload(req.body.avatar,{
-        folder:"avatars",
-        width:150,
-        crop:"scale"
-    })
+  
     const{name,email,password}= req.body
     const user = await User.create({
 
         name,
         email,
-        password,
-        avatar:{
-            public_id:mycloud.public_id,
-            url:mycloud.secure_url
-        }
-
+        password
     })
     sendToken(user,201,res)
 })

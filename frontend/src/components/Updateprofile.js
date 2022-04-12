@@ -51,7 +51,7 @@ const [email,setemail] =useState("")
       if(user){
           setname(user.name)
           setemail(user.email)
-          setavatarpreview(user.avatar.url)
+         
       }
     if (error) {
       alert.error(error)
@@ -107,15 +107,7 @@ const [email,setemail] =useState("")
             />
           </div>
 
-          <div id="updateProfileImage">
-            <img src={avatarPreview} alt="Avatar Preview" />
-            <input
-              type="file"
-              name="avatar"
-              accept="image/*"
-              onChange={updateProfileDataChange}
-            />
-          </div>
+         
           <input
             type="submit"
             value="Update"

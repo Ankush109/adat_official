@@ -23,7 +23,7 @@ const navigate =useNavigate()
           <div className="profileContainer">
             <div>
               <h1>My Profile</h1>
-              <img src={user.avatar.url} alt={user.name} />
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAvY5L-SW4Q9hR6jVWSBTsCBAuMGO8rXtq9Q&usqp=CAU"alt={user.name} />
               <Link to="/me/update">Edit Profile</Link>
             </div>
             <div>
