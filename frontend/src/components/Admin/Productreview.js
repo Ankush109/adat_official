@@ -34,6 +34,7 @@ const navigate =useNavigate()
 
   const deleteReviewHandler = (reviewId) => {
     dispatch(deletereviews(reviewId, productId));
+    console.log(productId);
   };
 
   const productReviewsSubmitHandler = (e) => {
@@ -53,6 +54,7 @@ const navigate =useNavigate()
     if (deleteError) {
       alert.error(deleteError);
       dispatch(clearerrors());
+      console.log(deleteError);
     }
 
     if (isdeleted) {

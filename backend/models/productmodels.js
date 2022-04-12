@@ -37,7 +37,7 @@ type:String
     stock:{
         type:Number,
         required:true,
-        default:0,
+        default:100,
         maxlength:[4,"stock cant exceed 4 characters"]
     },
     numberofreviews:{

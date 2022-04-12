@@ -126,13 +126,13 @@ export const deletereviews =(reviewid,productid)=> async (dispatch)=>{
       
         const {data} =await axios.delete(`/api/v1/reviews?id=${reviewid}&productid=${productid}`)
         dispatch({
-            type:DELETE_PRODUCT_SUCCESS,
-            payload:data.reviews
+            type:DELETE_REVIEW_SUCCESS,
+            payload:data.success
         })
 
     } catch (error) {
         dispatch({
-            type:DELETE_PRODUCT_FAIL,
+            type:DELETE_REVIEW_FAIL,
             payload:error.response.data.message
         })
     }

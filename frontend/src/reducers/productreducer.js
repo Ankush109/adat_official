@@ -125,6 +125,7 @@ export const deletereviews = (state = {},action) =>{
             case DELETE_REVIEW_SUCCESS:
             
                 return {
+                    ...state,
                     loading:false,
                     isdeleted:action.payload,
                 }
