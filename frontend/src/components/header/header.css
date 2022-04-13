@@ -13,7 +13,10 @@
   /* Add a black background color to the top navigation */
 .topnav {
   background-color: rgb(231, 100, 30);
-  overflow: hidden;
+  height:8vh;
+  width: 100vw;
+  display: flex;
+
 }
 
 /* Style the links inside the navigation bar */
@@ -24,6 +27,7 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+
 }
 
 /* Change the color of links on hover */
@@ -34,6 +38,6 @@
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #04AA6D;
+  background-color: #131716;
   color: white;
 }
