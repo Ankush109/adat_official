@@ -71,7 +71,7 @@ const MyOrders = () => {
         itemsQty: item.orderitems.length,
         id: item._id,
         status: item.orderstatus,
-        amount: item.totalprice,
+        amount: item.totalPrice,
       });
     });
 
@@ -82,7 +82,7 @@ const MyOrders = () => {
     }
 
     dispatch(myorder());
-    console.log(orders.shippinginfo);
+
   }, [dispatch, alert, error]);
 
   return (

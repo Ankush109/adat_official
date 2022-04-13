@@ -12,6 +12,7 @@ import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { clearerrors, newproduct } from "../../actions/productaction";
 import { NEW_PRODUCT_RESET } from "../../constants/productconstant";
+import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 const NewProduct = () => {
   const dispatch = useDispatch();
   const alert = useAlert();
@@ -101,6 +102,7 @@ const NewProduct = () => {
             onSubmit={createProductSubmitHandler}
           >
             <h1>Create Product</h1>
+            
 
             <div>
               <Spellcheck />
@@ -113,7 +115,7 @@ const NewProduct = () => {
               />
             </div>
             <div>
-              <AttachMoney />
+              <CurrencyRupeeIcon />
               <input
                 type="number"
                 placeholder="Price"
@@ -133,29 +135,18 @@ const NewProduct = () => {
                 rows="1"
               ></textarea>
             </div>
-
+            <h6>Note : You can't set stock , its set to 100 as default!</h6>
             <div>
-              <AccountTree />
-              <select onChange={(e) => setCategory(e.target.value)}>
-                <option value="">Choose Category</option>
-                {categories.map((cate) => (
-                  <option key={cate} value={cate}>
-                    {cate}
-                  </option>
-                ))}
-              </select>
-            </div>
-
-            <div>
-           
+                  
               <input
+              
                 type="number"
                 placeholder="Stock"
                 required
                 onChange={(e) => setStock(e.target.value)}
               />
             </div>
-
+            <h6>Give a image to your Product : </h6>
             <div id="createProductFormFile">
               <input
                 type="file"

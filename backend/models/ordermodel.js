@@ -1,4 +1,4 @@
- const mongoose = require("mongoose")
+const mongoose = require("mongoose")
 const orderschema =new mongoose.Schema({
     shippinginfo:{
         address:{type:String},
@@ -11,7 +11,7 @@ const orderschema =new mongoose.Schema({
         },
         phonenumber:{
             type:Number,
-            
+           
         }
 
     },
@@ -20,10 +20,7 @@ const orderschema =new mongoose.Schema({
         name:{
         type:String,
       },
-        phonenumber:{
-            type:Number,
-    
-        },
+      
         quantity:{
             type:Number,
    
@@ -74,7 +71,7 @@ shipingprice:{
 },
 totalprice:{
 type:Number,
-default:0
+
 },
 orderstatus:{
     type:String,

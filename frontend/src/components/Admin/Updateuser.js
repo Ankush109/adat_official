@@ -86,7 +86,7 @@ const {id}=useParams()
               onSubmit={updateUserSubmitHandler}
             >
               <h1>Update User</h1>
-
+              <h4>Note : This is not yet working , will fix soon!</h4>
               <div>
                 <Person/>
                 <input

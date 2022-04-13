@@ -153,7 +153,7 @@ const navigate =useNavigate()
                 onChange={(e) => setProductId(e.target.value)}
               />
             </div>
-            <h3 >Sometimes reviews may load slow ! </h3>
+            <h4 >Give the Product Id to get reviews of that particular product item </h4>
             <br>
             </br>
             <Button

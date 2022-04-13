@@ -41,7 +41,7 @@ dispatch(deleteproduct(id))
     {
       field: "name",
       headerName: "Name",
-      minWidth: 350,
+      minWidth: 200,
       flex: 1,
     },
     {
@@ -56,7 +56,7 @@ dispatch(deleteproduct(id))
       field: "price",
       headerName: "Price",
       type: "number",
-      minWidth: 270,
+      minWidth: 100,
       flex: 0.5,
     },
 
@@ -103,6 +103,7 @@ dispatch(deleteproduct(id))
         <Sidebar />
         <div className="productListContainer">
           <h1 id="productListHeading">ALL PRODUCTS</h1>
+          <h4>Note : Stock is set as 100 as default , Will fix soon !</h4>
 
           <DataGrid
             rows={rows}

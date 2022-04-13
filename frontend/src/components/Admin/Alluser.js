@@ -54,7 +54,7 @@ const navigate =useNavigate()
     {
       field: "email",
       headerName: "Email",
-      minWidth: 200,
+      minWidth: 150,
       flex: 1,
     },
     {
@@ -68,7 +68,7 @@ const navigate =useNavigate()
       field: "role",
       headerName: "Role",
       type: "number",
-      minWidth: 150,
+      minWidth: 100,
       flex: 0.3,
       cellClassName: (params) => {
         return params.getValue(params.id, "role") === "admin"

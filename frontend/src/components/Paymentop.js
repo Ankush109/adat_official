@@ -16,8 +16,9 @@ const Paymentop = () => {
 
   const dispatch = useDispatch()
   const alert = useAlert()
+  console.log(shippinginfo);
   const order = {
-    shippinginfo,
+    shippinginfo:shippinginfo,
     orderitems: cartitems,
     itemsprice: orderInfo.subtotal,
     shippingprice: orderInfo.shippingCharges,

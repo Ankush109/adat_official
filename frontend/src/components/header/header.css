@@ -14,8 +14,10 @@
 .topnav {
   background-color: rgb(231, 100, 30);
   height:8vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
+
+  
 
 }
 
