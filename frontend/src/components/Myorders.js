@@ -18,7 +18,7 @@ const MyOrders = () => {
 
 
   const columns = [
-    { field: "id", headerName: "Order ID", minWidth: 300, flex: 1 },
+    { field: "id", headerName: "Order ID", minWidth: 200, flex: 1 },
 
     {
       field: "status",
@@ -35,7 +35,7 @@ const MyOrders = () => {
       field: "itemsQty",
       headerName: "Items Qty",
       type: "number",
-      minWidth: 150,
+      minWidth: 100,
       flex: 0.3,
     },
 
@@ -43,7 +43,7 @@ const MyOrders = () => {
       field: "amount",
       headerName: "Amount",
       type: "number",
-      minWidth: 270,
+      minWidth: 150,
       flex: 0.5,
     },
 
@@ -71,7 +71,7 @@ const MyOrders = () => {
         itemsQty: item.orderitems.length,
         id: item._id,
         status: item.orderstatus,
-        amount: item.totalPrice,
+        amount: item.totalprice,
       });
     });
 
@@ -87,9 +87,10 @@ const MyOrders = () => {
 
   return (
     <Fragment>
-
+    
 
       <div className="myOrdersPage">
+      <a href="/"><button className="ok">Home</button></a>
         <DataGrid
           rows={rows}
           columns={columns}

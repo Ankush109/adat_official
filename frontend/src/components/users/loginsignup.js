@@ -5,7 +5,7 @@ import Loader from "../layout/Loader"
 import { useDispatch, useSelector } from "react-redux"
 import { clearerrors, login ,register} from '../../actions/useraction'
 import { useAlert } from "react-alert"
-import {useNavigate} from "react-router-dom"
+import {Link, useNavigate} from "react-router-dom"
 
 const LoginSignUp = (location) => {
 
@@ -106,6 +106,11 @@ const LoginSignUp = (location) => {
             </div>
             <button ref={switcherTab}></button>
           </div>
+          
+         <div className='op'>
+         <p> Click on the Register tab and Register if you are a new User</p>
+        
+         </div>
           <form className="loginForm" ref={loginTab} onSubmit={loginSubmit}>
             <div className="loginEmail">
 
@@ -117,8 +122,9 @@ const LoginSignUp = (location) => {
                 onChange={(e) => setLoginEmail(e.target.value)}
               />
             </div>
+            
             <div className="loginPassword">
-
+        
               <input
                 type="password"
                 placeholder="Password"
@@ -129,6 +135,7 @@ const LoginSignUp = (location) => {
             </div>
 
             <input type="submit" value="Login" className="loginBtn" />
+            <h5> ADAT</h5>
           </form>
           <form
             className="signUpForm"
@@ -158,8 +165,9 @@ const LoginSignUp = (location) => {
                 onChange={registerDataChange}
               />
             </div>
+            <p> Remember your password</p>
             <div className="signUpPassword">
-
+           
               <input
                 type="password"
                 placeholder="Password"
@@ -170,17 +178,11 @@ const LoginSignUp = (location) => {
               />
             </div>
 
-            <div id="registerImage">
-              <img src={avatarPreview } alt="Avatar Preview" />
-              <input
-                type="file"
-                name="avatar"
-                accept="image/*"
-                onChange={registerDataChange}
-              />
-            </div>
+          
             <input type="submit" value="Register" className="signUpBtn" />
+            <h5> ADAT</h5>
           </form>
+          <h1>ADAT</h1>
         </div>
       </div>
     </Fragment>}

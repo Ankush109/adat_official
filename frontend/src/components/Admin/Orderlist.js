@@ -46,7 +46,7 @@ const Orderlist = () => {
   }, [dispatch, alert, error, deleteError,  isdeleted]);
 
   const columns = [
-    { field: "id", headerName: "Order ID", minWidth: 300, flex: 1 },
+    { field: "id", headerName: "Order ID", minWidth: 150, flex: 1 },
 
     {
       field: "status",
@@ -71,7 +71,14 @@ const Orderlist = () => {
       field: "amount",
       headerName: "Amount",
       type: "number",
-      minWidth: 270,
+      minWidth: 70,
+      flex: 0.5,
+    },
+    {
+      field: "phonenumber",
+      headerName: "Phone number",
+    
+      minWidth: 70,
       flex: 0.5,
     },
 
@@ -79,15 +86,13 @@ const Orderlist = () => {
       field: "actions",
       flex: 0.3,
       headerName: "Actions",
-      minWidth: 150,
+      minWidth: 100,
       type: "number",
       sortable: false,
       renderCell: (params) => {
         return (
           <Fragment>
-            <Link to={`/admin/order/${params.getValue(params.id, "id")}`}>
-              <Edit />
-            </Link>
+          
 
             <Button
               onClick={() =>
@@ -111,6 +116,7 @@ const Orderlist = () => {
         itemsQty: item.orderitems.length,
         amount: item.totalprice,
         status: item.orderstatus,
+        phonenumber:item.shippinginfo.phonenumber
       });
     });
 
@@ -121,6 +127,7 @@ const Orderlist = () => {
         <Sidebar />
         <div className="productListContainer">
           <h1 id="productListHeading">ALL ORDERS</h1>
+          <h4>Editing the orderstatus will come soon !</h4>
 
           <DataGrid
             rows={rows}

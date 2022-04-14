@@ -55,7 +55,16 @@
     align-items: center;
   }
   
-  .shippingForm > div > input,
+  .shippingForm > div > input{
+      padding: 1vmax 4vmax;
+    padding-right: 1vmax;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    border-radius: 4px;
+    font: 300 0.9vmax cursive;
+    outline: none;
+  }
   .shippingForm > div > select {
     padding: 1vmax 4vmax;
     padding-right: 1vmax;
@@ -80,7 +89,7 @@
     color: white;
     font: 300 1vmax "Roboto";
     width: 100%;
-    padding: 1vmax;
+    padding:2vmax;
     cursor: pointer;
     transition: all 0.5s;
     outline: none;

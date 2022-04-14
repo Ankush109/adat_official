@@ -42,6 +42,7 @@ const navigate =useNavigate()
 
               <div>
                 <Link to="/orders">My Orders</Link>
+                <Link to="/"> Back Home</Link>
               
               </div>
             </div>

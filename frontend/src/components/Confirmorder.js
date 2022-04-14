@@ -49,7 +49,7 @@ const Confirmorder = () => {
                 </div>
                 <div>
                   <p>Phone:</p>
-                  <span>{shippinginfo.phoneNo}</span>
+                  <span>{shippinginfo.phonenumber}</span>
                 </div>
                 <div>
                   <p>Address:</p>

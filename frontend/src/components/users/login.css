@@ -5,15 +5,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(231, 231, 231);
+  background-image: url(https://dpvishwakarma.com/wp-content/uploads/2019/01/Leading-shopping-websites-of-India.png);
     position: fixed;
     top: 0%;
     left: 0;
   }
   
   .LoginSignUpBox {
-    background-color: white;
+    background-color: rgba(249, 217, 148, 0.862);
     width: 25vw;
+  
+
     height: 70vh;
     box-sizing: border-box;
     overflow: hidden;
@@ -36,7 +38,7 @@
   }
   
   .LoginSignUpBox > div > button {
-    background-color: tomato;
+    background-color: rgb(150, 18, 18);
     height: 3px;
     width: 50%;
     border: none;
@@ -76,7 +78,25 @@
     font: 300 0.9vmax cursive;
     outline: none;
   }
-  
+  .op > p{
+padding: 15px;
+  }
+  .OP{
+
+      background-color: #686a68; /* Green */
+      border: none;
+      color: white;
+      padding:15px;
+      padding: 2 3 4 5px;
+      padding-top: 48x;
+ 
+   
+     
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    
+  }
   .loginForm > div > svg,
   .signUpForm > div > svg {
     position: absolute;
@@ -127,11 +147,12 @@
   .loginBtn,
   .signUpBtn {
     border: none;
-    background-color: tomato;
+    background-color: rgb(55, 53, 52);
     color: white;
-    font: 300 0.9vmax "Roboto";
+    font: 500 1vmax "Roboto";
     width: 100%;
-    padding: 0.8vmax;
+   height: 50px;
+   padding: 1.2vmax;
     cursor: pointer;
     transition: all 0.5s;
     border-radius: 4px;

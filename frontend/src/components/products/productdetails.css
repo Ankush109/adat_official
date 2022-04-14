@@ -199,7 +199,7 @@ font: 300 1rem "Roboto";
   color: rgba(0, 0, 0, 0.548);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .ProductDetails {
     flex-direction: column;
     height: unset;
@@ -244,8 +244,8 @@ font: 300 1rem "Roboto";
   }
 
   .detailsBlock-3-1-1 > input {
-    padding: 1.5vmax;
-    width: 3vmax;
+    
+    width: 8vmax;
     font: 400 1.8vmax "Roboto";
   }
 

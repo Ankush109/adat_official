@@ -8,9 +8,8 @@ function Footer() {
   return (
 <footer id="footer">
 <div className='leftfooter'>
-<h4> download our app</h4>
-<img src={playstore} alt="playstore"/>
-<img src={appstore} alt="appstore"/>
+
+
 </div>
 <div className='midfooter'>
 <h1>dummy writes later will do</h1>
