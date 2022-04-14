@@ -27,11 +27,14 @@ const Home = () => {
       ):(<Fragment>
         <Metadata title="ANKUSH"/>
         <div className='banner'>
-            <p>You are in the right place</p>
+            <p>Celebrate every moment,</p>
+            <p></p>
               <h1>ADAT</h1>
               <a href="/products">
                   <button>View all Products</button>
+                
               </a>
+              <p></p>
         </div>
         <h2 className='homeheading'> Featured Products</h2>
         <div className='container' id="container">

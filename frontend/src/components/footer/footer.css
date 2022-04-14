@@ -37,10 +37,11 @@ footer {
     text-align: center;
   }
   
-  .midfooter > h1 {
-    font-size: 4vmax;
-    font-family: "Roboto";
+  .midfooter > h3 {
+    font-size: 2.5vmax;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: #eb4034;
+    font-weight: 300;
   }
   .midfooter > p {
     max-width: 60%;

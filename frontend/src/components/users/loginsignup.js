@@ -1,10 +1,12 @@
 import React, { Fragment, useRef, useState, useEffect } from 'react'
 import "../users/login.css"
 import Loader from "../layout/Loader"
-
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import { useDispatch, useSelector } from "react-redux"
 import { clearerrors, login ,register} from '../../actions/useraction'
 import { useAlert } from "react-alert"
+import HttpsIcon from '@mui/icons-material/Https';
+import EmailIcon from '@mui/icons-material/Email';
 import {Link, useNavigate} from "react-router-dom"
 
 const LoginSignUp = (location) => {
@@ -107,13 +109,10 @@ const LoginSignUp = (location) => {
             <button ref={switcherTab}></button>
           </div>
           
-         <div className='op'>
-         <p> Click on the Register tab and Register if you are a new User</p>
-        
-         </div>
+         
           <form className="loginForm" ref={loginTab} onSubmit={loginSubmit}>
             <div className="loginEmail">
-
+              <EmailIcon/>
               <input
                 type="email"
                 placeholder="Email"
@@ -124,7 +123,7 @@ const LoginSignUp = (location) => {
             </div>
             
             <div className="loginPassword">
-        
+              <HttpsIcon/>
               <input
                 type="password"
                 placeholder="Password"
@@ -135,7 +134,9 @@ const LoginSignUp = (location) => {
             </div>
 
             <input type="submit" value="Login" className="loginBtn" />
-            <h5> ADAT</h5>
+            <h3> ADAT</h3>
+            <h7>Click on the register  tab to register</h7>
+          <p>(Developed By Ankush Banerjee)</p>
           </form>
           <form
             className="signUpForm"
@@ -144,7 +145,7 @@ const LoginSignUp = (location) => {
             onSubmit={registerSubmit}
           >
             <div className="signUpName">
-
+                <AccountCircleIcon/>
               <input
                 type="text"
                 placeholder="Name"
@@ -155,7 +156,7 @@ const LoginSignUp = (location) => {
               />
             </div>
             <div className="signUpEmail">
-
+              <EmailIcon/>
               <input
                 type="email"
                 placeholder="Email"
@@ -165,9 +166,9 @@ const LoginSignUp = (location) => {
                 onChange={registerDataChange}
               />
             </div>
-            <p> Remember your password</p>
+       
             <div className="signUpPassword">
-           
+              <HttpsIcon/>
               <input
                 type="password"
                 placeholder="Password"
@@ -180,7 +181,8 @@ const LoginSignUp = (location) => {
 
           
             <input type="submit" value="Register" className="signUpBtn" />
-            <h5> ADAT</h5>
+            <h3> ADAT</h3>
+          
           </form>
           <h1>ADAT</h1>
         </div>

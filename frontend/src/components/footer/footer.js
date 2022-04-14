@@ -8,18 +8,21 @@ function Footer() {
   return (
 <footer id="footer">
 <div className='leftfooter'>
+<h1>ADAT</h1>
 
 
 </div>
 <div className='midfooter'>
-<h1>dummy writes later will do</h1>
+<h3>Rememorising every memories</h3>
+<h4>Every type of Customised gifts available</h4>
+<h5>Dashadrone kali mandir lane. Kol - 136 </h5>
 </div>
 <div className='rightfooter'>
 <h1>
     Follow us
 </h1>
-<a href='https://www.instagram.com/its_ankush_003/'>Instagram</a>
-<a href='https://www.facebook.com/ankush.banerjee.1042/'>facebook</a>
+<a href='https://www.instagram.com/careadat/'>Instagram</a>
+
 
 </div>
 </footer>
